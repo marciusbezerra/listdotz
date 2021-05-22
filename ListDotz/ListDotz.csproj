@@ -53,6 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetDotz.cs">
+      <DependentUpon>DataSetDotz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDotz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDotz.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DotzProducts.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -76,6 +84,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSetDotz.xsc">
+      <DependentUpon>DataSetDotz.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDotz.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDotz.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetDotz.xss">
+      <DependentUpon>DataSetDotz.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
